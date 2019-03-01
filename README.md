@@ -52,7 +52,7 @@ docker exec -i cobbler /usr/sbin/init 0
 ```
 docker exec -ti cobbler wget -O /tmp/ubuntu-14.04-server-amd64 http://old-releases.ubuntu.com/releases/14.04.2/ubuntu-14.04-server-amd64.iso
 docker exec -i cobbler 7z x -o/workspace/ubuntu /tmp/ubuntu-14.04-server-amd64
-docker exec -i cobbler cobbler import --name Ubuntu-14.04 --breed ubuntu --os-version=trusty --arch=x86_64 --path /workspace/ubuntu
+docker exec -i cobbler cobbler import --name Ubuntu-14.04 --breed ubuntu --os-version=trusty --path /workspace/ubuntu
 docker exec -i cobbler cobbler sync
 ```
 
