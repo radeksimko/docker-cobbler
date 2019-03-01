@@ -17,7 +17,15 @@ Do **NOT run anywhere near production**, but feel free to fork and create your o
 
 ## How
 
+### How to Pull
+
+```
+docker pull radeksimko/cobbler
+```
+
 ### How to Build
+
+In case you prefer to build things yourselves for any reason:
 
 ```
 docker build . -t radeksimko/cobbler
